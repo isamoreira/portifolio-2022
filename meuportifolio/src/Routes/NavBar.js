@@ -13,7 +13,7 @@ const Nav = styled.nav`
   font-weight: 400;
 `;
 
-const Navbar = () => {
+export default function Navbar(){
   return (
     <Nav>
       <Burger />
@@ -21,7 +21,6 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
 
         
       
