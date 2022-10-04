@@ -35,7 +35,7 @@ const StyledBurger = styled.div`
   }
 `;
 
-const Burger = () => {
+export default function Burger(){
   const [open, setOpen] = useState(false)
   
   return (
@@ -45,9 +45,8 @@ const Burger = () => {
         <div />
         <div />
       </StyledBurger>
-      <CenterNav open={open}/>
+      <CenterNav open={open} />
     </>
   )
 }
 
-export default Burger
