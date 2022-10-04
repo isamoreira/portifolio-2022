@@ -28,7 +28,9 @@ const Ul = styled.ul`
   }
 `;
 
-const CenterNav = ({ open }, link1, link2, link3) => {
+const CenterNav = ({open}, {link1, link2, link3}) => {
+
+
   return (
     <Ul open={open}>
       <li><Link to="/">{link1}</Link></li>
