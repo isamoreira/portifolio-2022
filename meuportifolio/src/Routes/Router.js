@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "../Components/About/About"
 import Works from "../Components/Works/Works"
+import Home from "../Components/Home/Home"
 import Navbar from "./NavBar";
 
 export default function Router() {
@@ -9,7 +10,7 @@ export default function Router() {
       <BrowserRouter>
         <Navbar link1="Home" link2="About" link3="Works" />
         <Routes>
-          <Route path="/" />
+          <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Works" element={<Works />} />
         </Routes>
