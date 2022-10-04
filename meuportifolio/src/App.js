@@ -1,12 +1,12 @@
 import React from "react"
-import Navbar from "./Routes/NavBar";
+import Router from "./Routes/Router";
 import * as S from "./AppStyle"
 
 function App() {
   return (
     <div>
       <S.GlobalStyle />
-      <Navbar />
+      <Router />
     </div>
   );
 }
