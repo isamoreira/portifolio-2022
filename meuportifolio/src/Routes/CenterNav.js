@@ -2,15 +2,31 @@ import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom"
 
+const LinkS = styled(Link)`
+color: inherit;
+text-decoration: inherit;
+background-color: #2C2C2C;
+`
+
+
 const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  padding: 0px 40px;
+  background-color: #2C2C2C;
+  position: relative;
+  right: 45px;
   li {
-    padding: 20px 30px;
+    background-color: #2C2C2C;
+    padding: 20px 60px;
     color: #fff;
-
+    &:hover {
+      border-bottom: solid 5px #facb30;
+      color: #facb30;
+      }
   }
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #2C2C2C;
@@ -28,13 +44,14 @@ const Ul = styled.ul`
   }
 `;
 
-export default function CenterNav({open}, {link1, link2, link3}) {
+export default function CenterNav({open, link1, link2, link3}) {
   return (
     <Ul open={open}>
-      <li><Link to="/">{link1}</Link></li>
-      <li><Link to="/About">{link2}</Link></li>
-      <li><Link to="/Works">{link3}</Link></li>
+      <li><LinkS to="/">{link1}</LinkS></li>
+      <li><LinkS to="/About">{link2}</LinkS></li>
+      <li><LinkS to="/Works">{link3}</LinkS></li>
     </Ul>
+    
   );
 };
 
