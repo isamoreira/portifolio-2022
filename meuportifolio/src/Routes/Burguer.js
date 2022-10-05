@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import CenterNav from './CenterNav';
 
 const StyledBurger = styled.div`
+  background-color: #2C2C2C;
   width: 2rem;
   height: 2rem;
   position: fixed;
@@ -18,7 +19,7 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? '#ccc' : '#333'};
+    background-color: ${({ open }) => open ? '#facb30' : '#fff'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -45,7 +46,7 @@ export default function Burger(){
         <div />
         <div />
       </StyledBurger>
-      <CenterNav open={open} />
+      <CenterNav open={open} link1="Home" link2="About" link3="Works" />
     </>
   )
 }
