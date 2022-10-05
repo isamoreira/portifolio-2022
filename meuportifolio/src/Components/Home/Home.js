@@ -91,7 +91,7 @@ export default function Home(){
                 <Txt3>Frontend Developer React</Txt3>
                 <Button>
                     <Zapzap src={Zap} alt="link whatsapp" />
-                    <Anchor target="_blank" href="https://wa.me/messege/UXWK4UDK6LMUA1" > 
+                    <Anchor target="_blank" href="https://wa.me/message/UXWK4UDK6LMUA1" > 
                         Contact me on
                     </Anchor>
                 </Button>
