@@ -10,17 +10,25 @@ width: 100%;
 display: flex;
 justify-content: center;
 padding-top: 6rem;
+
 `
 
 const ContainerChild = styled.div`
 display: flex;
 width: 70%;
 padding: 2rem;
+@media (max-width:1120px){
+    flex-direction: column;
+    align-items: center;
+}
 `
 
 const ContainerImg = styled.div`
 padding: 1rem;
 margin-right: 1rem;
+@media (max-width:1120px){
+    margin-right: 1rem;
+}
 `
 const Photo = styled.img`
 border-radius: 50%;
@@ -32,6 +40,9 @@ flex-direction: column;
 align-items: center;
 padding-left: 5rem;
 width: 60%;
+@media (max-width:1120px){
+    width: 80%;
+}
 `
 const ButtonContact = styled.button`
 color: #fff;
