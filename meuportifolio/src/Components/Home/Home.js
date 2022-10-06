@@ -11,14 +11,27 @@ display: flex;
 align-items: center;
 justify-content: center;
 
+@media (max-width: 820px){
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
 `
 
 const ContainerTxt = styled.div`
 padding: 0px 30px;
+
+@media (max-width: 820px){
+    align-items: center;
+}
 `
 
 const ContainerImg = styled.div`
 padding: 0px 50px;
+
+@media (max-width: 820px){
+    padding-right: 12rem;
+}
 `
 
 const Txt1 = styled.p`
@@ -27,7 +40,9 @@ font-weight: 300;
 line-height: 33px;
 letter-spacing: 0em;
 text-align: left;
-
+@media (max-width: 820px){
+    font-size: 30px;
+}
 `
 
 const Txt2 = styled.p`
@@ -36,6 +51,9 @@ font-weight: 800;
 line-height: 49px;
 letter-spacing: 0em;
 text-align: left;
+@media (max-width: 820px){
+    font-size: 42px;
+}
 
 `
 
@@ -45,10 +63,20 @@ font-weight: 200;
 line-height: 33px;
 letter-spacing: 0em;
 text-align: left;
+@media (max-width: 820px){
+    font-size: 30px;
+}
 `
 
 const Img = styled.img`
 width: 120%;
+@media (max-width:1800px){
+    
+}
+@media (max-width:420px){
+    width: 230%;
+    padding-right: 5rem;
+}
 `
 const Button = styled.button`
 color: #fff;
@@ -77,6 +105,9 @@ background-color: #facb30;
 position: relative;
 top: 0.20rem;
 right: 0.4rem;
+@media (max-width:430px){
+    width: 10%;
+}
 `
 
 
