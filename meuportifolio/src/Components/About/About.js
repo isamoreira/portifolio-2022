@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import React from "react"
 import Photopersona from "../Assets/photopersona.jpg"
 import styled from "styled-components"
@@ -116,6 +117,7 @@ export default function About(){
                         <ButtonContact>
                             <Logoimg src={Curriculo} alt="" />
                             <AnchorAbout href="https://drive.google.com/file/d/1o1G8F1Mgf4XR-XvldtdzSRDQJ5a4hR94/view?usp=drivesdk" target="_blank">Curriculum</AnchorAbout>
+ 
                         </ButtonContact>
                     </div>  
                     </Containertext>
