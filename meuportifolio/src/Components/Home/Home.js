@@ -31,7 +31,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 
-
 `
 
 const ContainerImg = styled.div`
