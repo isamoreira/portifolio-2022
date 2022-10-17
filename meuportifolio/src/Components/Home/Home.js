@@ -3,35 +3,41 @@ import WomanDev from "../Assets/womandev.gif"
 import styled from "styled-components"
 import Zap from "../Assets/whatsapp.png"
 
+
+const ContainerHome = styled.div`
+display: flex;
+align-itens: center;
+justify-content: center;
+padding: 4rem;
+`
 const DivHome = styled.div`
 background-color: #000000;
-width: 100%;
+width: 80%;
 color: #fff;
 display: flex;
-align-items: center;
+align-itens: center;
 justify-content: center;
+border: solid 3px yellow;
 
 @media (max-width: 820px){
-    flex-direction: column;
-    padding-top: 3rem;
+    flex-direction: column-reverse;   
 }
 
 `
 
 const ContainerTxt = styled.div`
-padding: 0px 30px;
+border: solid 3px yellow;
+display: flex;
+flex-direction: column;
+justify-content: center;
 
-@media (max-width: 820px){
-    align-items: center;
-}
+
 `
 
 const ContainerImg = styled.div`
 padding: 0px 50px;
+border: solid 3px yellow;
 
-@media (max-width: 820px){
-    padding-right: 12rem;
-}
 `
 
 const Txt1 = styled.p`
@@ -63,32 +69,32 @@ font-weight: 200;
 line-height: 33px;
 letter-spacing: 0em;
 text-align: left;
-@media (max-width: 820px){
-    font-size: 30px;
-}
+
 `
 
 const Img = styled.img`
-width: 120%;
-@media (max-width:1800px){
-    
-}
-@media (max-width:420px){
-    width: 230%;
-    padding-right: 5rem;
-}
+width: 100%;
+
 `
 const Button = styled.button`
+width: 80%;
 color: #fff;
 background-color: #facb30;
 padding: 1rem 2rem;
-margin-top: 2rem;
 font-size: 20px;
 border-radius: 10px 10px;
 
 &:hover{
     padding: 1.1rem 2.2rem; 
 }
+
+@media (max-width:1030px){
+   font-size: 14px;
+   padding: 0.5rem 1rem;
+}
+@media (max-width:780px){
+    width: 40%;
+ }
 `
 
 const Anchor = styled.a`
@@ -105,16 +111,18 @@ background-color: #facb30;
 position: relative;
 top: 0.20rem;
 right: 0.4rem;
-@media (max-width:430px){
-    width: 10%;
+@media (max-width: 820px){
+   top:0.10rem;
 }
+
 `
 
 
 
 export default function Home(){
     return(
-        <DivHome>
+        <ContainerHome>
+             <DivHome>
 
             <ContainerTxt>
                 <Txt1>My name's</Txt1>
@@ -133,5 +141,7 @@ export default function Home(){
 
             
         </DivHome>
+        </ContainerHome>
+       
     )
 }
