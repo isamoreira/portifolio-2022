@@ -18,18 +18,20 @@ const ContainerChild = styled.div`
 display: flex;
 width: 70%;
 padding: 2rem;
-@media (max-width:1120px){
-    flex-direction: column;
-    align-items: center;
-}
+@media (max-width: 800px){
+    flex-direction:column;
+   }
+
 `
 
 const ContainerImg = styled.div`
 padding: 1rem;
 margin-right: 1rem;
-@media (max-width:1120px){
-    margin-right: 1rem;
-}
+@media (max-width: 800px){
+    display: flex;
+    justify-content:center;
+   }
+
 `
 const Photo = styled.img`
 border-radius: 50%;
@@ -41,10 +43,22 @@ flex-direction: column;
 align-items: center;
 padding-left: 5rem;
 width: 60%;
-@media (max-width:1120px){
-    width: 80%;
-}
+@media (max-width: 450px){
+    width:100%;
+    position: relative;
+    right: 5.5rem;
+    
+   }
+
 `
+const ContainerButton = styled.div`
+@media (max-width: 800px){
+    display: flex;
+    align-itens:center;
+   }
+ 
+`
+
 const ButtonContact = styled.button`
 color: #fff;
 background-color: #facb30;
@@ -57,6 +71,19 @@ margin: 1rem;
 &:hover{
     padding: 1.1rem 2.2rem; 
 }
+@media (max-width: 1030px){
+    width: 70%;
+ }
+ @media (max-width: 800px){
+    font-size: 14px;
+    
+   }
+   @media (max-width: 450px){
+    width:60%;
+    
+    
+   }
+
 `
 
 const H3 =styled.h3`
@@ -74,6 +101,11 @@ line-height: 25px;
 letter-spacing: 0em;
 text-align: left;
 padding-top: 1rem;
+text-align: justify;
+@media (max-width: 450px){
+    font-size: 14px;
+    
+   }
 `
 const AnchorAbout =styled.a`
 color: inherit;
@@ -88,6 +120,23 @@ background-color: #facb30;
 position: relative;
 top: 0.20rem;
 right: 0.4rem;
+@media (max-width: 1030px){
+  top: 0.1rem;
+ }
+ @media (max-width: 800px){
+    width:2.2vw;
+    left: -0.2rem;
+    
+   }
+   @media (max-width: 450px){
+    width:3vw;
+    
+   }
+   @media (max-width: 450px){
+    width:4vw;
+    
+    
+   }
 `
 
 export default function About(){
@@ -109,7 +158,7 @@ export default function About(){
                         Suspendisse potenti. Aenean vel sagittis velit. Ut et facilisis tellus, eu ornare leo.
                     </Txt>
                     
-                    <div>
+                    <ContainerButton >
                         <ButtonContact>
                             <Logoimg src={Linkedin} alt="" />
                             <AnchorAbout href="https://www.linkedin.com/in/isabella-m-moreira/" target="_blank">Linkedin</AnchorAbout>
@@ -119,7 +168,7 @@ export default function About(){
                             <AnchorAbout href="https://drive.google.com/file/d/1o1G8F1Mgf4XR-XvldtdzSRDQJ5a4hR94/view?usp=drivesdk" target="_blank">Curriculum</AnchorAbout>
  
                         </ButtonContact>
-                    </div>  
+                    </ContainerButton>  
                     </Containertext>
                      
                
