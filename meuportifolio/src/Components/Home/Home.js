@@ -20,8 +20,6 @@ color: #fff;
 display: flex;
 align-itens: center;
 justify-content: center;
-border: solid 3px yellow;
-
 @media (max-width: 820px){
     flex-direction: column-reverse;   
 }
@@ -29,7 +27,6 @@ border: solid 3px yellow;
 `
 
 const ContainerTxt = styled.div`
-border: solid 3px yellow;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -39,7 +36,7 @@ justify-content: center;
 
 const ContainerImg = styled.div`
 padding: 0px 50px;
-border: solid 3px yellow;
+
 
 `
 
