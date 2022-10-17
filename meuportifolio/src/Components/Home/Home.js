@@ -9,10 +9,13 @@ display: flex;
 align-itens: center;
 justify-content: center;
 padding: 4rem;
+@media (max-width: 450px){
+       
+}
 `
 const DivHome = styled.div`
 background-color: #000000;
-width: 80%;
+width: 90%;
 color: #fff;
 display: flex;
 align-itens: center;
@@ -46,9 +49,6 @@ font-weight: 300;
 line-height: 33px;
 letter-spacing: 0em;
 text-align: left;
-@media (max-width: 820px){
-    font-size: 30px;
-}
 `
 
 const Txt2 = styled.p`
@@ -57,9 +57,7 @@ font-weight: 800;
 line-height: 49px;
 letter-spacing: 0em;
 text-align: left;
-@media (max-width: 820px){
-    font-size: 42px;
-}
+
 
 `
 
@@ -95,6 +93,17 @@ border-radius: 10px 10px;
 @media (max-width:780px){
     width: 40%;
  }
+
+ @media (max-width: 450px){
+      width: 60%; 
+}
+@media (max-width: 380px){
+    width: 80%;
+}
+@media (max-width: 330px){
+    width: 100%;
+    font-size: 12px;
+}
 `
 
 const Anchor = styled.a`
@@ -114,6 +123,10 @@ right: 0.4rem;
 @media (max-width: 820px){
    top:0.10rem;
 }
+@media (max-width: 450px){
+    width: 3vw;;
+}
+
 
 `
 
