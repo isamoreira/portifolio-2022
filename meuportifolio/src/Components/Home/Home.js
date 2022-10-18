@@ -35,6 +35,11 @@ justify-content: center;
 
 const ContainerImg = styled.div`
 padding: 0px 50px;
+@media (max-width: 450px){
+    padding: 0px 0px;
+    margin-right: 40px; 
+}
+
 
 
 `
@@ -68,6 +73,11 @@ text-align: left;
 
 const Img = styled.img`
 width: 100%;
+@media (max-width: 450px){
+    width: 120%; 
+    
+    
+}
 
 `
 const Button = styled.button`
