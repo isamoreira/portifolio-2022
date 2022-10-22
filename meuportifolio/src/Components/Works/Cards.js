@@ -6,6 +6,11 @@ const ContainerCards = styled.div`
 color: white;
 width: 20rem;
 padding: 3rem;
+@media (max-width: 538px){
+    padding: 0rem;
+    width: 18rem;
+}
+
 
 
 `
@@ -15,6 +20,13 @@ padding: 2rem 0rem;
 &:hover{
     filter: hue-rotate(60deg);
 }
+@media (max-width: 538px){
+   width: 16rem;
+}
+@media (max-width: 450px){
+    width: 13rem;
+ }
+
 `
 
 const ContainerChild = styled.div`
@@ -22,6 +34,7 @@ display: flex;
 align-itens: center;
 justify-content: center;
 flex-direction: column;
+
 
 `
 const H3 = styled.h3`
@@ -32,6 +45,12 @@ const Txt = styled.p`
 width: 20rem;
 margin-bottom: 2rem;
 text-align: justify;
+@media (max-width: 538px){
+    width: 16rem;
+ }
+ @media (max-width: 450px){
+    width: 13rem;
+ }
 `
 
 export default function Cards(data){
