@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react"
 import styled from "styled-components"
 
@@ -11,6 +12,9 @@ padding: 3rem;
 const Imgprojects =styled.img`
 width: 20rem;
 padding: 2rem 0rem;
+&:hover{
+    filter: hue-rotate(60deg);
+}
 `
 
 const ContainerChild = styled.div`
@@ -35,7 +39,7 @@ export default function Cards(data){
         <ContainerCards>
             <ContainerChild>
                 <H3>{data.data.name}</H3>
-                <a href={data.data.url}> <Imgprojects src={data.data.img} alt="img"/> </a>
+                <a href={data.data.url} target="_blank"> <Imgprojects src={data.data.img} alt="img"/> </a>
                 <Txt>{data.data.descricao}</Txt>
                 
             </ContainerChild>
