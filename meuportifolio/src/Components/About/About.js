@@ -149,13 +149,7 @@ export default function About(){
                 </ContainerImg>
                     <Containertext>
                     <H3>About me</H3>
-                    <Txt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Vivamus id lacus egestas, luctus enim ut, porttitor neque. 
-                        Aliquam dapibus sapien molestie, dictum turpis quis, euismod felis. 
-                        Duis hendrerit lacus eu quam pharetra, a hendrerit massa sodales. 
-                        Curabitur lacinia leo nisl, sit amet suscipit turpis mollis in.
-                        Pellentesque nulla arcu, fermentum ultrices ipsum at, suscipit fermentum mauris. 
-                        Suspendisse potenti. Aenean vel sagittis velit. Ut et facilisis tellus, eu ornare leo.
+                    <Txt>I am a systems analysis and development student at SENAC. I'm transitioning to information technology after 12 years of experience as a cook, reaching the positions of chef and restaurant management. (Bachelor of Gastronomy - UFBA). In addition to graduation, I seek knowledge in web development. In April 2022, he completed the Full-Stack Development course at Recode Pro. He also completes the Frontend Development course with a focus on React through Vai na Web. I am also always involved in socio-environmental projects related to food, as I currently manage the Cerrado Connection Project, financed after being champion of the Conservathon of Fundação Grupo Boticário, in addition to working on Slow Food Brazil projects.
                     </Txt>
                     
                     <ContainerButton >
