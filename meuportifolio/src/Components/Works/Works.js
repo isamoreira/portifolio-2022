@@ -19,6 +19,10 @@ width: 100%;
 display: flex;
 flex-wrap: wrap;
 padding: 6rem;
+@media (max-width: 770px){
+    width: 60%;
+   }
+
 `
 
 export default function Works(){
